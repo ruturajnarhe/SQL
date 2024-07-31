@@ -35,5 +35,12 @@ select *from student
 right join cource
 on student.id = cource.id;
 
+select *from student as a
+left join cource as b
+on a.id = b.id;
+union
+select *from student as a
+right join cource as b
+on a.id = b.id;
 
 
